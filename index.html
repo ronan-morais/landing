@@ -3,15 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Método Potes — organize seu dinheiro em 30 dias, sem planilhas e sem culpa | Potes</title>
+    <title>Método Potes: organize seu dinheiro em 30 dias, sem planilhas</title>
     <meta
       name="description"
       content="E-book + 1 ano do app Potes incluso. Três potes, 10 minutos por dia. O app custaria R$ 118,80 no primeiro ano — sai por R$ 0 para quem compra hoje."
     />
+    <link rel="canonical" href="https://poteslanding.vercel.app/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="theme-color" content="#16241D" />
-    <meta property="og:title" content="Método Potes — organize seu dinheiro em 30 dias" />
-    <meta property="og:description" content="O app custaria R$ 118,80 no primeiro ano. Hoje ele sai por R$ 0." />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Potes" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://poteslanding.vercel.app/" />
+    <meta property="og:title" content="Método Potes — organize seu dinheiro em 30 dias" />
+    <meta property="og:description" content="E-book + 1 ano do app incluso. O app custaria R$ 118,80 no primeiro ano; sai por R$ 0 para quem compra hoje." />
+    <meta property="og:image" content="https://poteslanding.vercel.app/assets/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1500" />
+    <meta property="og:image:height" content="788" />
+    <meta
+      property="og:image:alt"
+      content="Capa do e-book Método Potes: organize seu dinheiro em 30 dias, sem planilhas e sem culpa."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Método Potes — organize seu dinheiro em 30 dias" />
+    <meta name="twitter:description" content="E-book + 1 ano do app incluso. O app custaria R$ 118,80 no primeiro ano; sai por R$ 0 hoje." />
+    <meta name="twitter:image" content="https://poteslanding.vercel.app/assets/og.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +36,101 @@
       rel="stylesheet"
     />
     <link rel="preload" as="image" href="assets/capa.webp" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://poteslanding.vercel.app/#site",
+            "url": "https://poteslanding.vercel.app/",
+            "name": "Potes — Método Potes",
+            "description": "E-book e aplicativo de finanças pessoais que dividem a renda em três potes: Essenciais, Estilo de vida e Futuro.",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://poteslanding.vercel.app/#autor" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://poteslanding.vercel.app/#autor",
+            "name": "Ronan Alves de Morais",
+            "jobTitle": "Autor do Método Potes",
+            "url": "https://poteslanding.vercel.app/",
+            "sameAs": ["https://instagram.com/metodopotes"]
+          },
+          {
+            "@type": "Book",
+            "@id": "https://poteslanding.vercel.app/#ebook",
+            "name": "O Método Potes",
+            "alternateName": "Organize seu dinheiro em 30 dias — sem planilhas e sem culpa",
+            "description": "E-book de 24 páginas com o sistema de três potes (Essenciais, Estilo de vida e Futuro), um Plano de Ação de 30 Dias e 1 ano do aplicativo Potes incluso.",
+            "inLanguage": "pt-BR",
+            "bookFormat": "https://schema.org/EBook",
+            "numberOfPages": 24,
+            "author": { "@id": "https://poteslanding.vercel.app/#autor" },
+            "image": "https://poteslanding.vercel.app/assets/capa.webp",
+            "url": "https://poteslanding.vercel.app/",
+            "about": "Finanças pessoais, orçamento familiar e quitação de dívidas"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://poteslanding.vercel.app/#faq",
+            "inLanguage": "pt-BR",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Preciso ganhar bem para isso funcionar?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não. O método não muda com o tamanho da renda — muda o valor de cada pote. Ele funciona tanto com dois salários mínimos quanto com renda variável."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Isso é só mais um aplicativo que vou abandonar?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "O registro leva 10 segundos e força a pergunta “isso sai de qual pote?”. A decisão acontece antes da compra, não depois — é por isso que não dá para abandonar."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Preciso conectar minha conta bancária?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não. O app não pede senha do banco e não julga os seus gastos."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "E se eu estiver endividado?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Em situação crítica, o Pote 3 é redirecionado para estancar as dívidas. Guardar R$ 10 no início vale pela musculatura do hábito, não pelo montante."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O aplicativo é grátis para sempre?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não: são 12 meses grátis. Depois, R$ 9,90 por mês. Como você compra hoje, a primeira mensalidade só vence 12 meses depois."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Preciso anotar cada cafezinho?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não. Você registra só o que importa — o método existe justamente porque anotar tudo nunca funcionou."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="progresso" data-progresso aria-hidden="true"></div>

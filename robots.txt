@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://poteslanding.vercel.app/sitemap.xml
