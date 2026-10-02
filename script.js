@@ -1,4 +1,4 @@
-/* Potes · Método 3P — interações da landing.
+/* Potes · Método Potes — interações da landing.
    Sem dependências. Tudo degrada bem sem JavaScript. */
 
 (() => {
