@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Método 3P — organize seu dinheiro em 30 dias, sem planilhas e sem culpa | Potes</title>
+    <meta
+      name="description"
+      content="E-book + 1 ano do app Potes incluso. Três potes, 10 minutos por dia. O app custaria R$ 118,80 no primeiro ano — sai por R$ 0 para quem compra hoje."
+    />
+    <meta name="theme-color" content="#16241D" />
+    <meta property="og:title" content="Método 3P — organize seu dinheiro em 30 dias" />
+    <meta property="og:description" content="O app custaria R$ 118,80 no primeiro ano. Hoje ele sai por R$ 0." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="assets/capa.webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="progresso" data-progresso aria-hidden="true"></div>
+
+    <!-- ── Barra de oferta ─────────────────────────────────────────── -->
+    <div class="barra">
+      <p>
+        OFERTA DE LANÇAMENTO · <strong>1 ano do app Potes (R$ 118,80)</strong> incluso só para quem compra hoje
+      </p>
+      <p class="contador" data-contador><span class="contador__rotulo">termina em</span> <b>--:--:--</b></p>
+    </div>
+
+    <!-- ── Cabeçalho fixo (aparece após o hero) ────────────────────── -->
+    <header class="topo" data-topo>
+      <span class="marca">Potes</span>
+      <span class="topo__desc">MÉTODO 3P</span>
+      <a class="btn btn--mini" href="#oferta">Quero o e-book + 1 ano</a>
+    </header>
+
+    <main>
+      <!-- ── Hero ──────────────────────────────────────────────────── -->
+      <section class="hero">
+        <img
+          class="hero__fundo"
+          src="assets/capa.webp"
+          alt=""
+          width="2160"
+          height="2880"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="hero__veu" aria-hidden="true"></div>
+
+        <div class="hero__conteudo">
+          <p class="kicker" data-reveal>E-BOOK + APP · MÉTODO 3P</p>
+          <h1 class="hero__titulo" data-reveal style="--i: 1">
+            Organize seu dinheiro em 30 dias
+            <em>— sem planilhas e sem culpa.</em>
+          </h1>
+          <p class="lead" data-reveal style="--i: 2">
+            Três potes, 10 minutos por dia e um app que registra cada gasto em 10 segundos. O e-book completo sai com 1
+            ano do app Potes incluso.
+          </p>
+          <a class="btn btn--grande" href="#oferta" data-reveal style="--i: 3">Quero o e-book + 1 ano do app</a>
+          <p class="micro" data-reveal style="--i: 4">
+            Nada de assinatura no checkout: o app é grátis pelos próximos 12 meses.
+          </p>
+          <p class="assinatura" data-reveal style="--i: 5">
+            por Ronan Alves de Morais · 24 páginas · Plano de Ação de 30 Dias
+          </p>
+        </div>
+      </section>
+
+      <!-- ── Problema ──────────────────────────────────────────────── -->
+      <section class="secao" id="problema">
+        <div class="container">
+          <header class="secao__cabecalho">
+            <p class="kicker" data-reveal>O PROBLEMA</p>
+            <h2 data-reveal>Não é falta de disciplina. É a ferramenta errada.</h2>
+            <p class="lead lead--estreito" data-reveal>
+              Você já tentou. Baixou o aplicativo famoso, montou a planilha cheia de fórmulas, maratonou vídeos no
+              YouTube. Durou duas ou três semanas. O problema nunca foi você.
+            </p>
+          </header>
+
+          <div class="grid grid--3">
+            <article class="card" data-reveal>
+              <span class="num">01</span>
+              <span class="tag">O EFEITO MICROGERENCIAMENTO</span>
+              <h3>Esgotamento de energia</h3>
+              <p>
+                Anotar cada bala, cada corrida de aplicativo ou cada compra de mercado exige um esforço que a vida real
+                não comporta. Quando a tarefa vira fardo, o cérebro sabota: você simplesmente para de anotar.
+              </p>
+            </article>
+            <article class="card" data-reveal style="--i: 1">
+              <span class="num">02</span>
+              <span class="tag">O GATILHO EMOCIONAL</span>
+              <h3>Culpa e evitação</h3>
+              <p>
+                A planilha fria expõe os seus erros. Ver o quanto foi para o lazer desperta julgamento pessoal. E o que
+                a gente faz quando sente culpa? Evita. Você foge justamente nos dias em que mais precisaria olhar.
+              </p>
+            </article>
+            <article class="card" data-reveal style="--i: 2">
+              <span class="num">03</span>
+              <span class="tag">TUDO TEM O MESMO PESO</span>
+              <h3>Cegueira de prioridade</h3>
+              <p>
+                Uma lista infinita diz onde você gastou, mas não diz o que realmente importa. Ela trata um remédio de
+                farmácia e um impulso no e-commerce com o mesmo peso visual — e você fica perdido na hora de cortar.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Método ────────────────────────────────────────────────── -->
+      <section class="secao secao--escura" id="metodo">
+        <div class="container">
+          <header class="secao__cabecalho">
+            <p class="kicker kicker--amber" data-reveal>O MÉTODO</p>
+            <h2 data-reveal>Três perguntas. Respondidas em segundos.</h2>
+            <p class="lead lead--estreito" data-reveal>
+              O Método 3P troca o controle exaustivo por três decisões simples — e um aplicativo que mantém o mapa à
+              vista. Sem fórmulas, sem relatório interminável.
+            </p>
+          </header>
+
+          <div class="grid grid--3">
+            <article class="pilar" data-reveal>
+              <div class="pilar__topo">
+                <span class="bolha bolha--azul">P1</span>
+                <h3>Planejamento</h3>
+              </div>
+              <p class="pergunta">Qual é o tamanho real do meu campo de visão este mês?</p>
+              <p>
+                Renda, contas fixas e variáveis em três colunas simples. O mapa sai em 10 minutos — você não precisa de
+                precisão de centavos, precisa de direção.
+              </p>
+            </article>
+            <article class="pilar" data-reveal style="--i: 1">
+              <div class="pilar__topo">
+                <span class="bolha bolha--amber">P2</span>
+                <h3>Priorização</h3>
+              </div>
+              <p class="pergunta">Onde o meu dinheiro constrói valor e onde ele está escorrendo pelo ralo?</p>
+              <p>
+                Cada real vai para um dos três potes: Essenciais, Estilo de vida e Futuro. E o filtro de 24 horas
+                segura o impulso antes de virar fatura.
+              </p>
+            </article>
+            <article class="pilar" data-reveal style="--i: 2">
+              <div class="pilar__topo">
+                <span class="bolha bolha--verde">P3</span>
+                <h3>Progresso</h3>
+              </div>
+              <p class="pergunta">Como eu sei, de forma simples e visual, que estou saindo do lugar?</p>
+              <p>
+                Termômetro de conquista, corrente de dias e uma revisão de 10 minutos no domingo. Progresso visível —
+                sem neura e sem gráfico complexo.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── O que você recebe ─────────────────────────────────────── -->
+      <section class="secao" id="incluso">
+        <div class="container">
+          <header class="secao__cabecalho">
+            <p class="kicker" data-reveal>O QUE VAI NA SUA MÃO</p>
+            <h2 data-reveal>Tudo que chega hoje, de uma vez.</h2>
+            <p class="lead lead--estreito" data-reveal>
+              Não é só um PDF. É o método escrito, o plano dia a dia, os scripts prontos para copiar — e a ferramenta
+              que faz tudo isso rodar sozinho.
+            </p>
+          </header>
+
+          <div class="duas-colunas">
+            <ul class="lista">
+              <li data-reveal>
+                <span class="check" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></svg></span>
+                <div>
+                  <h3>E-book completo · O Método 3P</h3>
+                  <p>24 páginas, do diagnóstico emocional ao plano fechado. Direto ao ponto, sem enrolação acadêmica.</p>
+                </div>
+              </li>
+              <li data-reveal style="--i: 1">
+                <span class="check" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></svg></span>
+                <div>
+                  <h3>Plano de Ação de 30 Dias</h3>
+                  <p>Uma tarefa prática por dia, de 10 minutos. Do Dia 1 ao Dia 30, com o alvo de cada dia explicado.</p>
+                </div>
+              </li>
+              <li data-reveal style="--i: 2">
+                <span class="check" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></svg></span>
+                <div>
+                  <h3>3 scripts de conversa prontos</h3>
+                  <p>
+                    O que dizer, palavra por palavra, para renegociar dívida, recusar convite fora do orçamento e pedir
+                    desconto.
+                  </p>
+                </div>
+              </li>
+              <li data-reveal style="--i: 3">
+                <span class="check" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></svg></span>
+                <div>
+                  <h3>Checklist de Corte Cirúrgico</h3>
+                  <p>Oito gastos invisíveis para revisar e cortar ainda nesta semana.</p>
+                </div>
+              </li>
+              <li data-reveal style="--i: 4">
+                <span class="check" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></svg></span>
+                <div>
+                  <h3>Gestão minimalista no celular</h3>
+                  <p>Três notas que substituem qualquer aplicativo complicado — Entradas, Saídas e Progresso.</p>
+                </div>
+              </li>
+              <li class="lista__destaque" data-reveal style="--i: 5">
+                <span class="check check--amber" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3.4 14.7 9 21 9.9l-4.5 4.4 1.1 6.2L12 17.6 6.4 20.5l1.1-6.2L3 9.9 9.3 9z"/></svg></span>
+                <div>
+                  <h3>1 ano do aplicativo Potes incluso</h3>
+                  <p>R$ 9,90 por mês — R$ 118,80 no primeiro ano — sem custo para quem compra o e-book hoje.</p>
+                </div>
+              </li>
+            </ul>
+
+            <figure class="capa" data-reveal style="--i: 2">
+              <img src="assets/capa.webp" alt="Capa do e-book O Método 3P" width="2160" height="2880" loading="lazy" decoding="async" />
+              <figcaption>
+                <span>E-BOOK · MÉTODO 3P</span>
+                <b>O MÉTODO 3P</b>
+                <i>Organize seu dinheiro em 30 dias</i>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Oferta ────────────────────────────────────────────────── -->
+      <section class="secao secao--escura" id="oferta">
+        <div class="container">
+          <header class="secao__cabecalho">
+            <p class="kicker kicker--amber" data-reveal>A OFERTA DE LANÇAMENTO</p>
+            <h2 data-reveal>O aplicativo custaria R$ 118,80 no primeiro ano. Hoje ele sai por R$ 0.</h2>
+            <p class="lead lead--estreito" data-reveal>
+              Quem compra o e-book hoje leva 12 meses do app Potes sem mensalidade. São R$ 9,90 por mês que você não
+              paga — e a primeira cobrança só venceria daqui a um ano.
+            </p>
+          </header>
+
+          <div class="duas-colunas duas-colunas--centro">
+            <div class="ancora">
+              <span class="ancora__rotulo" data-reveal>12 mensalidades do app Potes</span>
+
+              <div class="meses" data-meses aria-hidden="true">
+                <span class="mes" style="--d: 0"></span>
+                <span class="mes" style="--d: 1"></span>
+                <span class="mes" style="--d: 2"></span>
+                <span class="mes" style="--d: 3"></span>
+                <span class="mes" style="--d: 4"></span>
+                <span class="mes" style="--d: 5"></span>
+                <span class="mes" style="--d: 6"></span>
+                <span class="mes" style="--d: 7"></span>
+                <span class="mes" style="--d: 8"></span>
+                <span class="mes" style="--d: 9"></span>
+                <span class="mes" style="--d: 10"></span>
+                <span class="mes" style="--d: 11"></span>
+                <span class="seta" style="--d: 12" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4 12h15M13.5 6.5 19.5 12l-6 5.5"/></svg></span>
+                <span class="zero" style="--d: 13">0</span>
+              </div>
+
+              <p class="ancora__conta" data-reveal>
+                <span class="riscado">R$ 118,80</span> → <b>R$ 0 hoje</b>
+              </p>
+              <p class="ancora__texto" data-reveal>
+                A primeira mensalidade só venceria em <b data-vencimento>outubro de 2027</b>. Até lá, o app inteiro é
+                seu — os três potes, o mapa do mês, o plano de 30 dias e a revisão semanal.
+              </p>
+            </div>
+
+            <aside class="preco" data-reveal style="--i: 2">
+              <span class="kicker kicker--mudo">VOCÊ PAGA HOJE</span>
+
+              <dl class="preco__linhas">
+                <div>
+                  <dt>E-book + 5 bônus</dt>
+                  <dd class="slot" data-preco>R$ [preço]</dd>
+                </div>
+                <div>
+                  <dt>1 ano do app Potes</dt>
+                  <dd class="preco__zero">R$ 0</dd>
+                </div>
+                <div>
+                  <dt>Em vez de R$ 118,80</dt>
+                  <dd class="preco__ganho">grátis hoje</dd>
+                </div>
+              </dl>
+
+              <hr />
+
+              <p class="preco__aviso">
+                Um pagamento único. Sem assinatura, sem renovação automática, sem surpresa no cartão.
+              </p>
+
+              <a class="btn btn--grande btn--bloco" href="#" data-checkout>Quero o e-book + 1 ano do app</a>
+              <p class="micro micro--centro">O ano grátis vale para compras feitas hoje.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── App incluso ───────────────────────────────────────────── -->
+      <section class="secao" id="app">
+        <div class="container">
+          <header class="secao__cabecalho">
+            <p class="kicker" data-reveal>E O APP VEM JUNTO</p>
+            <h2 data-reveal>O método escrito. E a ferramenta que faz ele acontecer.</h2>
+          </header>
+
+          <div class="duas-colunas duas-colunas--centro">
+            <figure class="telefone" data-reveal>
+              <img
+                src="assets/app-home.webp"
+                alt="Tela inicial do app Potes, com o oxigênio do mês e os três potes"
+                width="780"
+                height="1520"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+
+            <div class="beneficios">
+              <p class="lead" data-reveal>
+                Entender o método é metade do caminho. A outra metade é vivê-lo todos os dias — e é isso que o app faz
+                por você.
+              </p>
+
+              <ul class="lista lista--compacta">
+                <li data-reveal>
+                  <span class="icone" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4 9h16M4 15h16"/><circle cx="9.5" cy="9" r="2.2"/><circle cx="14.5" cy="15" r="2.2"/></svg></span>
+                  <div>
+                    <h3>Configure uma vez, em 3 minutos</h3>
+                    <p>Renda, contas fixas e a divisão dos potes. O app monta o seu mês a partir daí.</p>
+                  </div>
+                </li>
+                <li data-reveal style="--i: 1">
+                  <span class="icone" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M13.5 2.5 4.5 13.5h6l-1 8 9-11h-6l1-8z"/></svg></span>
+                  <div>
+                    <h3>Registre cada gasto em 10 segundos</h3>
+                    <p>Um toque, um pote. E a pergunta que muda o comportamento: “isso sai de qual pote?”.</p>
+                  </div>
+                </li>
+                <li data-reveal style="--i: 2">
+                  <span class="icone" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M9 4 3.5 6.2v13.6L9 17.6l6 2.4 5.5-2.2V4.2L15 6.4 9 4z"/><path d="M9 4v13.6M15 6.4v13.6"/></svg></span>
+                  <div>
+                    <h3>Consulte o mapa quando quiser</h3>
+                    <p>
+                      As três colunas do planejamento sempre à mão — e o seu oxigênio, o número que devolve a sua margem
+                      de manobra.
+                    </p>
+                  </div>
+                </li>
+                <li data-reveal style="--i: 3">
+                  <span class="icone" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10.5h17M8 3v4M16 3v4"/><path d="M9.2 15.4 11.4 17.6 15.8 13.2"/></svg></span>
+                  <div>
+                    <h3>Revise a rota em 10 minutos por semana</h3>
+                    <p>Quatro perguntas mostram o que ajustar. Ajuste de rota, não de caráter.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <p class="nota" data-reveal>
+                O app não pede senha do banco e não julga os seus gastos. Quanto mais honesto você for na configuração,
+                mais útil ele fica.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FAQ ───────────────────────────────────────────────────── -->
+      <section class="secao secao--suave" id="faq">
+        <div class="container">
+          <header class="secao__cabecalho">
+            <p class="kicker" data-reveal>ANTES DE DECIDIR</p>
+            <h2 data-reveal>Perguntas que você provavelmente está fazendo.</h2>
+          </header>
+
+          <div class="grid grid--2">
+            <article class="card card--faq" data-reveal>
+              <h3>Preciso ganhar bem para isso funcionar?</h3>
+              <p>
+                Não. O método não muda com o tamanho da renda — muda o valor de cada pote. Ele funciona tanto com dois
+                salários mínimos quanto com renda variável.
+              </p>
+            </article>
+            <article class="card card--faq" data-reveal style="--i: 1">
+              <h3>Isso é só mais um aplicativo que vou abandonar?</h3>
+              <p>
+                O registro leva 10 segundos e força a pergunta “isso sai de qual pote?”. A decisão acontece antes da
+                compra, não depois — é por isso que não dá para abandonar.
+              </p>
+            </article>
+            <article class="card card--faq" data-reveal>
+              <h3>Preciso conectar minha conta bancária?</h3>
+              <p>Não. O app não pede senha do banco e não julga os seus gastos.</p>
+            </article>
+            <article class="card card--faq" data-reveal style="--i: 1">
+              <h3>E se eu estiver endividado?</h3>
+              <p>
+                Em situação crítica, o Pote 3 é redirecionado para estancar as dívidas. Guardar R$ 10 no início vale
+                pela musculatura do hábito, não pelo montante.
+              </p>
+            </article>
+            <article class="card card--faq" data-reveal>
+              <h3>O aplicativo é grátis para sempre?</h3>
+              <p>
+                Não: são 12 meses grátis. Depois, R$ 9,90 por mês. Como você compra hoje, a primeira mensalidade só
+                venceria em <b data-vencimento>outubro de 2027</b>.
+              </p>
+            </article>
+            <article class="card card--faq" data-reveal style="--i: 1">
+              <h3>Preciso anotar cada cafezinho?</h3>
+              <p>
+                Não. Você registra só o que importa — o método existe justamente porque anotar tudo nunca funcionou.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA final ─────────────────────────────────────────────── -->
+      <section class="secao secao--escura secao--centrada" id="comecar">
+        <div class="container container--estreito">
+          <header class="secao__cabecalho">
+            <p class="kicker kicker--amber" data-reveal>O SEU PRÓXIMO PASSO REAL</p>
+            <h2 class="titulo--gigante" data-reveal>Comece o Dia 1 hoje.</h2>
+            <p class="lead" data-reveal>
+              Você não precisa consertar toda a sua história financeira de uma só vez. Precisa dar o próximo passo
+              certo — e deixar o app segurar o resto.
+            </p>
+          </header>
+
+          <div class="cta-final">
+            <a class="btn btn--grande" href="#oferta" data-reveal>Quero o e-book + 1 ano do app</a>
+
+            <ul class="reasseguros" data-reveal>
+              <li><span aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></svg></span> Um pagamento único</li>
+              <li><span aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></svg></span> O app é grátis por 12 meses</li>
+              <li><span aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></svg></span> Primeira mensalidade só em <b data-vencimento-curto>out/2027</b></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Rodapé ──────────────────────────────────────────────────── -->
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape__topo">
+          <div>
+            <span class="marca marca--grande">Potes</span>
+            <p class="assinatura">Cada real no seu pote.</p>
+          </div>
+          <p class="rodape__contato">
+            <a href="mailto:ronan86@gmail.com">ronan86@gmail.com</a> ·
+            <a href="https://instagram.com/metodopotes" rel="noopener">@metodopotes</a> ·
+            <a href="https://www.metodopotes.com.br" rel="noopener">www.metodopotes.com.br</a>
+          </p>
+        </div>
+
+        <!-- REMOVA este bloco antes de publicar. São dados que só o autor tem. -->
+        <aside class="pendencias">
+          <p class="pendencias__titulo">ANTES DE PUBLICAR — só você pode preencher</p>
+          <ul>
+            <li>Preço do e-book (aparece no card de oferta e no botão de checkout)</li>
+            <li>Link de checkout / plataforma de pagamento</li>
+            <li>Política de garantia e reembolso</li>
+            <li>Prova social real: depoimento, número de leitores ou resultado concreto</li>
+          </ul>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
