@@ -1266,40 +1266,6 @@ ul {
   border-color: var(--amber);
 }
 
-.pendencias {
-  margin-top: 2rem;
-  padding: 1.4rem 1.6rem;
-  border-radius: 16px;
-  border: 2px solid var(--amber);
-  background: rgb(198 128 60 / 0.1);
-}
-
-.pendencias__titulo {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  color: var(--amber-claro);
-}
-
-.pendencias ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-top: 0.75rem;
-}
-
-.pendencias li {
-  display: flex;
-  gap: 0.6rem;
-  font-size: 0.88rem;
-  color: var(--ondarksoft);
-}
-
-.pendencias li::before {
-  content: "—";
-  color: var(--amber-claro);
-}
-
 /* ── Animações de entrada ─────────────────────────────────────────────── */
 
 [data-reveal] {
