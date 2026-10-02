@@ -45,28 +45,6 @@
   addEventListener("resize", aoRolar, { passive: true });
   aoRolar();
 
-  /* ── Contador: a oferta vale até a meia-noite de hoje ───────────────── */
-
-  const contador = document.querySelector("[data-contador] b");
-
-  if (contador) {
-    const fim = new Date();
-    fim.setHours(24, 0, 0, 0);
-
-    const dois = (n) => String(n).padStart(2, "0");
-
-    const tique = () => {
-      const resta = Math.max(0, fim - Date.now());
-      const horas = Math.floor(resta / 3_600_000);
-      const minutos = Math.floor((resta % 3_600_000) / 60_000);
-      const segundos = Math.floor((resta % 60_000) / 1000);
-      contador.textContent = `${dois(horas)}:${dois(minutos)}:${dois(segundos)}`;
-    };
-
-    tique();
-    setInterval(tique, 1000);
-  }
-
   /* ── Datas relativas: "daqui a 12 meses" nunca fica desatualizado ───── */
 
   const daquiA12Meses = new Date();

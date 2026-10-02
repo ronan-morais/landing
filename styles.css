@@ -205,6 +205,11 @@ ul {
   max-width: 840px;
 }
 
+/* Coluna um pouco mais larga, para títulos longos (oferta). */
+.secao__cabecalho--medio {
+  max-width: 900px;
+}
+
 .secao--escura {
   background: var(--bgdark);
   color: var(--ondark);
@@ -242,6 +247,11 @@ ul {
   align-items: start;
 }
 
+/* Sem isto o item não encolhe abaixo do conteúdo e a página estoura no mobile. */
+.duas-colunas > * {
+  min-width: 0;
+}
+
 @media (min-width: 880px) {
   .grid--3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -263,6 +273,11 @@ ul {
 
   .duas-colunas--centro {
     align-items: center;
+  }
+
+  /* Na oferta o card de preço tem largura fixa no design (520px). */
+  .duas-colunas--oferta {
+    grid-template-columns: minmax(0, 1fr) 520px;
   }
 }
 
@@ -388,7 +403,7 @@ ul {
   width: 100%;
 }
 
-/* ── Barra de oferta + contador ───────────────────────────────────────── */
+/* ── Barra de oferta ──────────────────────────────────────────────────── */
 
 .barra {
   background: var(--amber);
@@ -402,30 +417,6 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 0.5rem 1rem;
-}
-
-.barra strong {
-  font-weight: 600;
-}
-
-.contador {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.15rem 0.7rem;
-  border-radius: 999px;
-  background: rgb(255 255 255 / 0.45); /* o chip escurecido levava a tinta a 4,1:1; claro, ela sobe para 8,6:1 */
-  font-variant-numeric: tabular-nums;
-}
-
-.contador__rotulo {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-}
-
-.contador b {
-  font-weight: 600;
 }
 
 /* ── Cabeçalho fixo ───────────────────────────────────────────────────── */
@@ -649,24 +640,6 @@ ul {
 
 /* ── Depoimentos ──────────────────────────────────────────────────────── */
 
-/* Selo de avaliação: estrelas + a nota, em uma pílula de fundo suave. */
-.selo {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  align-self: flex-start;
-  margin-top: var(--e-4);
-  padding: 0.625rem 1.125rem;
-  border-radius: 100px;
-  background: var(--soft);
-  color: var(--ink);
-  font-size: 0.875rem;
-}
-
-.selo b {
-  font-weight: 600;
-}
-
 .estrelas {
   display: flex;
   align-items: center;
@@ -677,15 +650,6 @@ ul {
 .estrelas .ico {
   width: 16px;
   height: 16px;
-}
-
-.selo .estrelas {
-  gap: 0.75rem;
-}
-
-.selo .estrelas .ico {
-  width: 15px;
-  height: 15px;
 }
 
 .depoimento {
@@ -930,7 +894,7 @@ ul {
   margin: 0;
   border-radius: 16px;
   overflow: hidden;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 5 / 7;
   max-width: 400px;
   justify-self: center;
   box-shadow: 0 28px 60px rgb(28 26 22 / 0.35);
@@ -984,39 +948,28 @@ ul {
 .ancora {
   display: flex;
   flex-direction: column;
-}
-
-.ancora > .ancora__rotulo {
-  margin-bottom: var(--e-3);
-}
-
-/* Os pontos são a prova; a conta é o veredito. */
-.ancora > .meses {
-  margin-bottom: var(--e-6);
-}
-
-.ancora > .ancora__conta {
-  margin-bottom: var(--e-3);
+  gap: 1.625rem;
 }
 
 .ancora__rotulo {
-  font-size: 0.72rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 1.5px;
   color: var(--ondarksoft);
 }
 
 .meses {
   display: flex;
-  flex-wrap: wrap;
+  /* Uma fileira só, como no design: os pontos encolhem em vez de quebrar. */
+  flex-wrap: nowrap;
   align-items: center;
   gap: 0.45rem;
 }
 
 .mes,
 .zero {
-  width: clamp(26px, 5.4vw, 38px);
+  width: clamp(24px, 3.9vw, 36px);
+  min-width: 16px;
   aspect-ratio: 1;
   border-radius: 50%;
   opacity: 0;
@@ -1028,7 +981,7 @@ ul {
 }
 
 .mes {
-  background: rgb(198 128 60 / 0.22);
+  background: rgb(198 128 60 / 0.18);
 }
 
 .zero {
@@ -1099,7 +1052,8 @@ ul {
 .preco {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  gap: 1.125rem;
+  padding: 2.25rem;
   border-radius: 24px;
   background: var(--surface);
   color: var(--ink);
@@ -1109,32 +1063,16 @@ ul {
   justify-self: center;
 }
 
-.preco > .kicker {
-  margin-bottom: var(--e-4);
-}
-
-.preco > .preco__linhas {
-  margin-bottom: var(--e-6);
-}
-
-.preco > .preco__aviso {
-  margin-bottom: var(--e-5);
-}
-
-.preco > .btn {
-  margin-bottom: var(--e-3);
-}
-
 .preco__linhas {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 1.125rem;
   margin: 0;
 }
 
 .preco__linhas > div {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
@@ -1150,20 +1088,12 @@ ul {
   font-variant-numeric: tabular-nums;
 }
 
-.preco__zero {
+.preco__verde {
   color: var(--forest);
 }
 
-.preco__ganho {
+.preco__ambar {
   color: var(--amber-texto);
-}
-
-.slot {
-  padding: 0.1rem 0.5rem;
-  border-radius: 8px;
-  background: rgb(198 128 60 / 0.16);
-  border: 1px dashed var(--amber);
-  font-size: 0.9rem;
 }
 
 .preco hr {
